@@ -6,13 +6,13 @@ A studio management dashboard for an interior architecture firm. Built with vani
 
 ## Screenshots
 
-| Revenue & invoices | Projects |
+| Revenue & invoices (dark mode) | Projects |
 |---|---|
 | ![Revenue and invoices](docs/screenshots/revenue.png) | ![Projects](docs/screenshots/projects.png) |
-| **Analytics** | **Worker space** |
+| **Analytics (dark mode)** | **Worker space** |
 | ![Analytics](docs/screenshots/analytics.png) | ![Worker space](docs/screenshots/worker-space.png) |
 
-> Screenshots use fictional demo data. The interface is in French.
+> Screenshots use fictional demo data. The interface is in French and supports light and dark mode.
 
 ## Features
 
@@ -25,6 +25,7 @@ A studio management dashboard for an interior architecture firm. Built with vani
 - **Global search**: find reports, projects and clients quickly
 - **Admin-protected routes**: revenue, clients and settings are behind an admin login (initial password set via `VITE_ADMIN_PASSWORD` in `.env`)
 - **Export helpers**: export and print data
+- **Light and dark mode**
 
 ## Tech Stack
 
