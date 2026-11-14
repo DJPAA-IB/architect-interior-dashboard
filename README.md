@@ -2,8 +2,17 @@
 
 A studio management dashboard for an interior architecture firm. Built with vanilla JavaScript, Vite and Chart.js. It tracks daily work reports, projects, clients, team members, invoices and revenue in one place.
 
-<!-- Add a screenshot: save it as docs/screenshot.png and uncomment the line below -->
-<!-- ![Dashboard screenshot](docs/screenshot.png) -->
+![Admin dashboard](docs/screenshots/dashboard.png)
+
+## Screenshots
+
+| Revenue & invoices | Projects |
+|---|---|
+| ![Revenue and invoices](docs/screenshots/revenue.png) | ![Projects](docs/screenshots/projects.png) |
+| **Analytics** | **Worker space** |
+| ![Analytics](docs/screenshots/analytics.png) | ![Worker space](docs/screenshots/worker-space.png) |
+
+> Screenshots use fictional demo data. The interface is in French.
 
 ## Features
 
