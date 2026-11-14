@@ -1,0 +1,125 @@
+/* Design Tokens & CSS Variables for Architect Interior Dashboard */
+:root {
+  /* Brand Palette */
+  --primary-50: #faf5fb;
+  --primary-100: #f3e8f4;
+  --primary-200: #e7d1ea;
+  --primary-300: #d5b0da;
+  --primary-400: #bb81c2;
+  --primary-500: #85368a;
+  --primary-600: #7c2d82;
+  --primary-700: #631d68;
+  --primary-gradient: linear-gradient(135deg, #85368a 0%, #631d68 100%);
+  --primary-glow: rgba(133, 54, 138, 0.25);
+
+  /* Functional Accents */
+  --accent-emerald: #10b981;
+  --accent-emerald-bg: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+
+  --accent-amber: #f59e0b;
+  --accent-amber-bg: #fffbeb;
+  --accent-amber-border: #fde68a;
+
+  --accent-rose: #f43f5e;
+  --accent-rose-bg: #fff1f2;
+  --accent-rose-border: #fecdd3;
+
+  --accent-blue: #0ea5e9;
+  --accent-blue-bg: #f0f9ff;
+  --accent-blue-border: #bae6fd;
+
+  --accent-purple: #8b5cf6;
+  --accent-purple-bg: #f5f3ff;
+  --accent-purple-border: #ddd6fe;
+
+  /* Neutrals (Light Mode Default) */
+  --bg-app: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-sidebar: #ffffff;
+  --bg-input: #f8fafc;
+  --bg-input-focus: #ffffff;
+  --bg-hover: #f1f5f9;
+  --bg-active: #e2e8f0;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --border-subtle: #f1f5f9;
+  --border-default: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --border-focus: #6366f1;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 2px 12px 0 rgba(15, 23, 42, 0.04), 0 0 1px 1px rgba(15, 23, 42, 0.02);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Spacing / Sizing */
+  --sidebar-width: 250px;
+  --sidebar-collapsed-width: 80px;
+  --header-height: 70px;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  --bg-app: #0b0f19;
+  --bg-surface: #131b2e;
+  --bg-surface-elevated: #1a243d;
+  --bg-sidebar: #0f1626;
+  --bg-input: #172138;
+  --bg-input-focus: #1c2844;
+  --bg-hover: #1e2b48;
+  --bg-active: #28395f;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --text-inverse: #0f172a;
+
+  --border-subtle: #1e293b;
+  --border-default: #25334d;
+  --border-hover: #3b4d70;
+  --border-focus: #818cf8;
+
+  --accent-emerald-bg: rgba(16, 185, 129, 0.12);
+  --accent-emerald-border: rgba(16, 185, 129, 0.3);
+
+  --accent-amber-bg: rgba(245, 158, 11, 0.12);
+  --accent-amber-border: rgba(245, 158, 11, 0.3);
+
+  --accent-rose-bg: rgba(244, 63, 94, 0.12);
+  --accent-rose-border: rgba(244, 63, 94, 0.3);
+
+  --accent-blue-bg: rgba(14, 165, 233, 0.12);
+  --accent-blue-border: rgba(14, 165, 233, 0.3);
+
+  --accent-purple-bg: rgba(139, 92, 246, 0.12);
+  --accent-purple-border: rgba(139, 92, 246, 0.3);
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 20px -3px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 2px 12px 0 rgba(0, 0, 0, 0.3), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+}
